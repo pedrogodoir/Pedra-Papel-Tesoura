@@ -3,8 +3,6 @@
 //      O BOT vai jogar algo aleatório, escolhendo entre as opções
 // No console, é exibido o resultado após o BOT jogar
 
-// Tem que ter um placar pra saber quem ganhou no final
-
 function atribuiNome() {
     var htmlNome = document.querySelector(`[data-attr="player-name"`)
     var nome = "Pedro" || prompt("Digite seu nome?")
