@@ -1,23 +1,18 @@
-// Opções = Pedra, papel e tesoura
-// Bot -> jogar após você lançar o comando (opcões acima)
-//      O BOT vai jogar algo aleatório, escolhendo entre as opções
-// No console, é exibido o resultado após o BOT jogar
-
 function atribuiNome() {
     var htmlNome = document.querySelector(`[data-attr="player-name"`)
-    var nome = "Pedro" || prompt("Digite seu nome?")
-    htmlNome.textContent = ` ${nome}!`
+    var nome = "Usuario"
+    htmlNome.textContent = `${nome}`
 }; atribuiNome()
 
 var opcoes = ["Pedra", "Papel", "Tesoura"]
 
-function jogarBOT() {
+function jogadaBOT() {
     var numeroAleatorio = Math.floor(Math.random() * opcoes.length)
     return opcoes[numeroAleatorio]
 }
 
 function jogar(opcao) {
-    var jogadaBot = jogarBOT()
+    var jogadaBot = jogadaBOT()
     var htmlResultado = document.querySelector(`[data-attr="result"]`)
     var htmlJogadaPlayer = document.querySelector(`[data-attr="jogada-player"]`)
     var htmlJogadaBot = document.querySelector(`[data-attr="jogada-bot"]`)

@@ -28,6 +28,11 @@ button:focus {
     font-size: 18px;
     font-weight: 700;
 }
+.user {
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+}
 p.top-player-name {
     font-size: 22px;
     font-weight: 500;
